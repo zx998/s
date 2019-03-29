@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#aa{
+				width: 100px;
+				height: 100px;
+				background: red;
+			
+			}
+		</style>
+	</head>
+	<body>
+		<button id="bb">点击</button>
+		<div id="aa">
+			
+		</div>
+	</body>
+	<script type="text/javascript">
+	var d=document.getElementById("aa");
+	var b=document.getElementById("bb");
+	var ee=0;
+	bb.onclick=function  () {
+		setInterval(function  () {
+			if (ee>100) {
+				ee=0;
+			} 
+			ee+=5;
+		d.style.left=ee+"px";
+			
+		},3000)
+		
+	}
+	</script>
+</html>
